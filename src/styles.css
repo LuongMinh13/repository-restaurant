@@ -1,5 +1,6 @@
 /*==================GOOGLE FONTS==================*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 
 /*==================== VARIABLES CSS ====================*/
@@ -8,10 +9,10 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 142; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 151; /*Purple 250 - Green 142 - Blue 230 - Pink 340 - Green2*/
 
     /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 69%, 61%);
+    --first-color: hsl(var(--hue-color), 93%, 32%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -28,13 +29,14 @@
     --body-font: 'Poppins', sans-serif;;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
-    --big-font-size: 2rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
+    --logo--big--font--size : 3rem;
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
     --h3-font-size: 1.125rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
 
     /*========== Font weight ==========*/
     --font-medium: 500;
@@ -110,6 +112,12 @@ body{
     color: var(--text-color);
 }
 
+.header,
+.main,
+.footer__container{
+    padding: 0;
+}
+
 ul{
     list-style: none;
 }
@@ -125,7 +133,7 @@ img{
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section{
-    padding: 2rem 0 4rem;
+    padding: 6rem 0 2rem;
 }
 
 .section_title{
@@ -142,6 +150,19 @@ img{
 .section__subtitle{
     text-align: center;
 }
+
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #FFF;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  transition: .3s;
+}
+
+.button:hover{
+    background-color: var(--first-color-alt);
+  }
 
 /*==================== LAYOUT ====================*/
 .container{
@@ -164,6 +185,15 @@ img{
     
 }
 
+
+
+/* --------Active-link--------- */
+.active-link{
+    color: var(--first-color);
+}
+
+
+
 /*==================== NAV ====================*/
 .nav__menu{
     padding: 2rem .25rem 4 rem;
@@ -172,7 +202,6 @@ img{
 .nav{
     display: flex;
     width: 100%;
-    height: var(--header-height);
     justify-content: space-between;
     align-items: center;
 }
@@ -191,17 +220,17 @@ img{
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: var(--big-font-size);
+    font-size: 2rem;
     color: var(--first-color);
     font-weight: var(--font-medium);
 }
 
 .nav__logo:hover{
-    color: rgb(198, 81, 205);
+    color: var(--first-color-alt);
 }
 
 .nav__icon{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .nav__link{
@@ -211,8 +240,43 @@ img{
     font-size: var(--small-font-size);
     color: var(--title-color);
     font-weight: var(--font-medium);
+    transition: 0.3s;
 }
 
 .nav__link:hover{
     color: var(--first-color);
+}
+
+
+/*==================== HOME ====================*/
+.home__container{
+    max-width: 960px;
+    grid-template-columns: repeat(2,1fr);
+    align-content: center;
+}
+
+.home__data{
+    transform: translateY(.5s);
+}
+
+.home__title{
+    font-size: var(--big-font-size);
+    color: var(--first-color);
+    margin-bottom: var(--mb-1);
+
+}
+
+.home__subtitle{
+    font-size: var(--h2-font-size);
+}
+
+.home__subtitle-ville{
+    font-size: var(--h1-font-size);
+    color: var(--first-color);
+}
+
+.home__img{
+    width: 500px;
+    justify-content: center;
+    justify-self: center;
 }
