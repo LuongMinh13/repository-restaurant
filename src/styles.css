@@ -340,6 +340,23 @@ img{
 
 
 
+
+/*==================== SERVICES ====================*/
+.menu__container{
+    grid-template-columns: repeat(3 , 1fr);
+    column-gap: 4rem;
+}
+
+.menu__data{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgb(3 74 40 / 15%);
+    text-align: center;
+}
+
 /* Large screen */
 @media screen and (min-width: 768px)
 {
