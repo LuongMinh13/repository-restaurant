@@ -146,6 +146,10 @@ img{
     margin-bottom: var(--mb-3);
 }
 
+.section__title, .section__subtitle{
+    text-align: center;
+}
+
 .section__title{
     font-size: var(--h1-font-size);
     color: var(--title-color);
@@ -311,9 +315,28 @@ img{
 
 
 /*==================== SERVICES ====================*/
+.services__container{
+    max-width: 960px;
+    margin: auto;
+    row-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
 
+.services__img {
+    width: 64px;
+    height: 64px;
+    fill: var(--first-color);
+    margin-bottom: var(--mb-2);
+}
 
+.services__data{
+    text-align: center;
+    justify-content: center;
+}
 
+.services__content{
+    text-align: center;
+}
 
 
 
