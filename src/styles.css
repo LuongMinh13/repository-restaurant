@@ -300,19 +300,21 @@ img{
     align-content: center;
 }
 
-.about__data{
-    transform: translateX(20px);
-}
-
 .about__description{
     margin-bottom: var(--mb-3);
 }
-
 
 .about__img{
     border-radius: 0.5rem;
     justify-self: center;
 }
+
+
+/*==================== SERVICES ====================*/
+
+
+
+
 
 
 /* Large screen */
