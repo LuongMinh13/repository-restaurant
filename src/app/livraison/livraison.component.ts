@@ -11,6 +11,12 @@ export class LivraisonComponent implements OnInit {
   
   ngOnInit(): void {
 
+
+  }
+
+  toContact(){
+    document.getElementById("contact")?.scrollIntoView();
   }
 
 }
+

@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'chezhamy';
+
+  toHome(){
+    document.getElementById("home")?.scrollIntoView();
+  }
+
+  toMenu(){
+    document.getElementById("menu")?.scrollIntoView();
+  }
+
+  toLivraison(){
+    document.getElementById("livraison")?.scrollIntoView();
+  }
+
+  toContact(){
+    document.getElementById("contact")?.scrollIntoView();
+  }
 }
+
