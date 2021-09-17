@@ -9,12 +9,12 @@ import { IMenu } from './menu__data';
 })
 export class MenuComponent implements OnInit {
 
-  constructor(private MenuService : MenuServices) { }
+  constructor(private MenuService: MenuServices) { }
 
-  LesMenu: IMenu [] = []
+  LesMenu: IMenu[] = []
 
   ngOnInit(): void {
-    this.LesMenu = this.MenuService.gerMenu();
+    this.LesMenu = this.MenuService.getMenu();
   }
 
 }
