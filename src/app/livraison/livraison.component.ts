@@ -15,7 +15,7 @@ export class LivraisonComponent implements OnInit {
   }
 
   toContact(){
-    document.getElementById("contact")?.scrollIntoView();
+    document.getElementById("contact")?.scrollIntoView({behavior:"smooth"});
   }
 
 }

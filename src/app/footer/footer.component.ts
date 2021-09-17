@@ -13,14 +13,14 @@ export class FooterComponent implements OnInit {
   }
 
   toServices(){
-    document.getElementById("services")?.scrollIntoView();
+    document.getElementById("services")?.scrollIntoView({behavior:"smooth"});
   }
 
   toContact(){
-    document.getElementById("contact")?.scrollIntoView();
+    document.getElementById("contact")?.scrollIntoView({behavior:"smooth"});
   }
 
   toLivraison(){
-    document.getElementById("livraison")?.scrollIntoView();
+    document.getElementById("livraison")?.scrollIntoView({behavior:"smooth"});
   }
 }
