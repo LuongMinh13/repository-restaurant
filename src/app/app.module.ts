@@ -10,6 +10,7 @@ import { ServicesComponent } from './services/services.component';
 import { MenuComponent } from './menu/menu.component';
 import { LivraisonComponent } from './livraison/livraison.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ContactComponent } from './contact/contact.component';
     ServicesComponent,
     MenuComponent,
     LivraisonComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserAnimationsModule,
