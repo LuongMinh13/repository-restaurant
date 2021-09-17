@@ -12,4 +12,15 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  toServices(){
+    document.getElementById("services")?.scrollIntoView();
+  }
+
+  toContact(){
+    document.getElementById("contact")?.scrollIntoView();
+  }
+
+  toLivraison(){
+    document.getElementById("livraison")?.scrollIntoView();
+  }
 }
