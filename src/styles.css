@@ -418,12 +418,16 @@ img{
 
 .contact__adresse__description{
     font-size: 2.5rem;
+    color: var(--first-color);
 }
 
 .contact__horaire{
     border-radius: 2rem;
 }
 
+.contact__icon{
+    color: black;
+}
 
 /*==================== FOOTER ====================*/
 
@@ -473,6 +477,8 @@ img{
     color: var(--text-color-light);
     margin-top: 3.5rem;
 }
+
+
 /* Large screen */
 @media screen and (min-width: 768px)
 {
