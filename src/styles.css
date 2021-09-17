@@ -357,6 +357,53 @@ img{
     text-align: center;
 }
 
+/*==================== SERVICES ====================*/
+.livraison__container{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.livraision__container-ou{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+}
+
+.livraison__ou{
+    color: var(--first-color-alt);
+}
+
+/* .livraison__data-deliveroo{
+    width: 100%;
+} */
+
+.livraison__data-deliveroo,
+.livraison__data-chezhamy{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    text-align: center;
+    width: 100%;
+}
+
+.livraison__logo{
+    align-items: center;
+}
+
+.livraison__logo-chezhamy{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    color: var(--first-color);
+}
+
+
 /* Large screen */
 @media screen and (min-width: 768px)
 {
